@@ -3,7 +3,11 @@ import React from "react";
 const SearchBox = () => {
   return (
     <div>
-      <button>Search</button>
+      <input
+        className="pa3 ba b--green bg-lightest-blue"
+        type="search"
+        placeholder="Search Robots"
+      />
     </div>
   );
 };
