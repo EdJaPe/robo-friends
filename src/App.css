@@ -1,0 +1,6 @@
+@import url("http://fonts.cdnfonts.com/css/sega-logo-font");
+h1 {
+  font-weight: 800;
+  font-family: "SEGA LOGO FONT", sans-serif;
+  color: rgb(66, 178, 206);
+}
