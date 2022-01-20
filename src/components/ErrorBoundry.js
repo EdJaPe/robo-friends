@@ -7,8 +7,17 @@ class ErrorBoundry extends Component {
       hasError: false,
     };
   }
+  componentDidCatch(error, info) {
+    this.setState({ hasError: true });
+  }
+
   render() {
-    return <div></div>;
+    const { hasError } = this.state;
+    return hasError ? (
+      <h1>Oopsy daisy there was an error</h1>
+    ) : (
+      this.props.children
+    );
   }
 }
 export default ErrorBoundry;
